@@ -99,6 +99,7 @@ zstyle ':fzf-tab:complete:kill:*' popup-pad 0 3
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias yay-file="yay -S --needed - <"
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias ip='ip -color=auto'
 export LESS='-R --use-color -Dd+r$Du+b'
 alias ls='ls --color=auto'
@@ -112,3 +113,6 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 [[ ! -f ${HOME}/.p10k.zsh ]] || source ${HOME}/.p10k.zsh
 
 precmd () { echo -n "\x1b]1337;CurrentDir=$(pwd)\x07" }
+
+# cuda
+export PATH=${PATH}:/opt/cuda/bin:/opt/cuda/nsight_systems/bin
