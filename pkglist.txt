@@ -1,2 +1,3 @@
-nerd-fonts-git
+nerd-fonts-meta
 fzf
+bat

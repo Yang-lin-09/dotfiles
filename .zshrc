@@ -6,8 +6,8 @@ fi
 
 # >>> proxy >>>
 proxy() {
-    export http_proxy="http://192.168.254.1:17992"
-    export https_proxy="http://192.168.254.1:17992"
+    export http_proxy="http://127.0.0.1:7890"
+    export https_proxy="http://127.0.0.1:7890"
 }
 
 unsetproxy() {
@@ -33,7 +33,7 @@ setopt hist_save_no_dups     # don't save duplicates
 setopt hist_ignore_space     # no commands starting with space
 setopt hist_reduce_blanks    # remove all unneccesary spaces
 setopt share_history         # share history between sessions
-[ -z "$HISTFILE" ] && HISTFILE="$ZDOTDIR/.zsh_history"
+[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
 HISTSIZE=290000
 SAVEHIST=$HISTSIZE
 
