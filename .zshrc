@@ -98,6 +98,7 @@ zstyle ':fzf-tab:complete:kill:*' popup-pad 0 3
 
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
+alias yay-file="yay -S --needed - <"
 alias ip='ip -color=auto'
 export LESS='-R --use-color -Dd+r$Du+b'
 alias ls='ls --color=auto'
