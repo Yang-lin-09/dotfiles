@@ -37,6 +37,10 @@ setopt share_history         # share history between sessions
 HISTSIZE=290000
 SAVEHIST=$HISTSIZE
 
+# some key setting
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 
 # >>> zinit >>>
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -104,6 +108,6 @@ export BAT_THEME=''
 
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
-[[ ! -f ${ZDOTDIR}/.p10k.zsh ]] || source ${ZDOTDIR}/.p10k.zsh
+[[ ! -f ${HOME}/.p10k.zsh ]] || source ${HOME}/.p10k.zsh
 
 precmd () { echo -n "\x1b]1337;CurrentDir=$(pwd)\x07" }
