@@ -1,0 +1,8 @@
+hyprland-git
+waybar-hyprland
+rofi
+kitty
+swaybg
+swayidle
+pamixer
+ttf-font-awesome
