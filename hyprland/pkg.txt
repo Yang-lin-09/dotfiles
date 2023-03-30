@@ -6,3 +6,6 @@ swaybg
 swayidle
 pamixer
 ttf-font-awesome
+slurm
+grim
+wl-clipboard
